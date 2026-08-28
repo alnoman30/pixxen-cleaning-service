@@ -1,0 +1,2395 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cleaning Company</title>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <nav class="bg-[#003A4C] border-b border-white/12">
+      <div class="mx-auto">
+        <div class="flex items-center justify-between h-12">
+          <div class="flex items-center sm:gap-4 gap-3">
+            <!-- Desktop Sidebar Button -->
+            <button
+              id="desktop-sidebar"
+              aria-label="Toggle menu"
+              class="hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#89D7EF] hover:bg-[#04607c] cursor-pointer transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg
+                width="42"
+                height="8"
+                viewBox="0 0 42 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="2" fill="#ffffff" />
+                <rect y="6" width="42" height="2" fill="#ffffff" />
+              </svg>
+            </button>
+            <!-- Mobile Hamburger -->
+            <button
+              id="mobile-menu-toggle"
+              class="lg:hidden text-white hover:text-cream p-2 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="12" width="32" height="2" fill="white" />
+                <rect y="18" width="32" height="2" fill="white" />
+              </svg>
+            </button>
+            <a href="index.html" class="flex items-center">
+              <!-- replace with your logo img -->
+              <img
+                src="assets/images/cleaning-pixxen-logo.svg"
+                alt="Pixxen"
+                class="img-fluid sm:w-auto w-34"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <!-- ====== SERVICES DROPDOWN ====== -->
+            <div class="desktop-dropdown">
+              <a
+                href="#services"
+                class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium desktop-dropdown-toggle"
+              >
+                SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+              </a>
+
+              <!-- Mega panel: list LEFT + grid RIGHT -->
+              <div class="desktop-dropdown-menu">
+                <!-- LEFT: service items -->
+                <ul class="dropdown-service-list">
+                  <li>
+                    <a href="mobile-app-design.html">
+                      <span class="service-icon">
+                        <!-- Mobile icon -->
+                        <img
+                          src="assets/images/dropdownicon1.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      MOBILE APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html">
+                      <span class="service-icon">
+                        <!-- Dashboard/pie icon -->
+                        <img
+                          src="assets/images/dropdownicon2.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      DASHBOARD DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="website-design.html">
+                      <span class="service-icon">
+                        <!-- Monitor icon -->
+                        <img
+                          src="assets/images/dropdownicon3.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEBSITE DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html">
+                      <span class="service-icon">
+                        <!-- Laptop icon -->
+                        <img
+                          src="assets/images/dropdownicon4.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEB APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html">
+                      <span class="service-icon">
+                        <!-- Desktop/screen icon -->
+                        <img
+                          src="assets/images/dropdownicon5.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      SAAS DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html">
+                      <span class="service-icon">
+                        <!-- Brand/star icon -->
+                        <img
+                          src="assets/images/dropdownicon6.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      BRANDING
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- right: items -->
+                <div class="flex items-end">
+                  <img src="assets/images/dropdown-shape.svg" alt="" />
+                </div>
+              </div>
+              <!-- end .desktop-dropdown-menu -->
+            </div>
+            <!-- ====== end SERVICES ====== -->
+
+            <a
+              href="case-study.html"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              >CASE STUDIES</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              >ABOUT</a
+            >
+            <a
+              href="blog.html"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              >BLOG</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex items-center">
+            <a
+              href="contact.html"
+              class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-white/12 transition-all font-medium"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span class="t-up text-base font-medium text-white uppercase"
+                  >OUR Contact</span
+                >
+                <span class="t-down text-base font-medium text-white uppercase"
+                  >OUR Contact</span
+                >
+              </div>
+            </a>
+            <a
+              href="contact.html"
+              class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#ADEBB3] text-[#003A4C] transition-colors font-bold"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-base font-medium text-[#003A4C] uppercase"
+                  >Let’s Connect</span
+                >
+                <span
+                  class="t-down text-base font-medium text-[#003A4C] uppercase"
+                  >Let’s Connect</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile LET'S CONNECT -->
+          <a
+            href="contact.html"
+            class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#ADEBB3] text-[#003A4C] transition-colors font-bold"
+          >
+            <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+              <span class="t-up text-sm font-medium text-[#003A4C] uppercase"
+                >Let’s Connect</span
+              >
+              <span class="t-down text-sm font-medium text-[#003A4C] uppercase"
+                >Let’s Connect</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+      <!-- Dark overlay -->
+      <div id="mobile-overlay" class="mobile-overlay"></div>
+
+      <!-- Wrapper holds both panels -->
+      <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+        <!-- PANEL 1: Main Menu -->
+        <div id="mm-main" class="mm-panel mm-main">
+          <div class="mm-main-header">
+            <span class="mm-title">Menu</span>
+            <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mm-nav-list">
+            <li>
+              <!-- SERVICES: opens panel 2 -->
+              <button
+                id="mm-services-trigger"
+                class="mm-nav-link w-full text-left"
+                style="background: none; border: none; cursor: pointer"
+              >
+                SERVICES
+                <span class="mm-plus">+</span>
+              </button>
+            </li>
+            <li>
+              <a href="case-study.html" class="mm-nav-link">case studies</a>
+            </li>
+            <li><a href="about.html" class="mm-nav-link">about</a></li>
+            <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+            <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+            <li><a href="team.html" class="mm-nav-link">team</a></li>
+            <li>
+              <div class="flex justify-start mt-8 mx-4">
+                <a
+                  href="contact.html"
+                  class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[#ADEBB3] transition-all duration-200"
+                >
+                  <div class="btn-inner relative z-2 flex items-center gap-3">
+                    <div
+                      class="icon-circle h-6 w-6 rounded-full bg-[#003A4C] flex items-center justify-center overflow-hidden"
+                    >
+                      <div class="icon-slider flex flex-row">
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#ADEBB3"
+                          />
+                        </svg>
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#ADEBB3"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div
+                      class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col"
+                    >
+                      <span
+                        class="t-up md:text-[20px] text-base font-medium text-[#003A4C] uppercase"
+                        >Let’s Connect</span
+                      >
+                      <span
+                        class="t-down md:text-[20px] text-base font-medium text-[#003A4C] uppercase"
+                        >Let’s Connect</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- LET'S CONNECT -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/cleaning-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Services -->
+        <div id="mm-services" class="mm-panel mm-services">
+          <div class="mm-services-header">
+            <button id="mm-back" class="mm-back-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M19 12H5M11 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              BACK
+            </button>
+            <button
+              id="mm-services-close"
+              class="mm-close-btn"
+              aria-label="Close menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <div class="mm-services-title">Services</div>
+
+            <!-- 2×3 grid -->
+            <div class="mm-services-grid">
+              <!-- Mobile App Design -->
+              <a href="mobile-app-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon1.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">MOBILE APP DESIGN</span>
+              </a>
+              <!-- Dashboard Design -->
+              <a href="dashboard-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon2.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">DASHBOARD DESIGN</span>
+              </a>
+              <!-- Website Design -->
+              <a href="website-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon3.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEBSITE DESIGN</span>
+              </a>
+              <!-- Web App Design -->
+              <a href="web-application-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon4.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEB APP DESIGN</span>
+              </a>
+              <!-- SaaS Design -->
+              <a href="saas-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon5.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">SAAS DESIGN</span>
+              </a>
+              <!-- Branding -->
+              <a href="branding-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon6.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">BRANDING</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- decorative bottom grid -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/cleaning-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end mobile-menu-wrapper -->
+    </nav>
+
+    <!-- FULL PAGE MENU -->
+    <div
+      id="pixxen-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main navigation"
+    >
+      <!-- TOP PANEL: slides in from top -->
+      <div class="menu-top" id="menu-top">
+        <!-- Grid decoration top-left -->
+        <div class="deco-cross" style="top: 0px; left: 0px">
+          <img
+            src="assets/images/large-menu-top.svg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+
+        <!-- Grid decoration top-right area -->
+        <div class="deco-cross" style="bottom: 0px; right: 0px">
+          <img
+            src="assets/images/large-menu-bottom.svg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+
+        <!-- LET'S CONNECT -->
+
+        <a
+          href="contact.html"
+          class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#ADEBB3] text-[#003A4C] transition-colors font-bold"
+        >
+          <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+            <span class="t-up text-base font-medium text-[#003A4C] uppercase"
+              >Let’s Connect</span
+            >
+            <span class="t-down text-base font-medium text-[#003A4C] uppercase"
+              >Let’s Connect</span
+            >
+          </div>
+        </a>
+
+        <!-- CLOSE BUTTON -->
+        <div class="close-wrap">
+          <button class="close-btn" id="menu-close" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-columns" id="nav-columns">
+          <div class="nav-col" id="col-services">
+            <div class="nav-col-title">Services</div>
+            <ul>
+              <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+              <li><a href="dashboard-design.html">Dashboard Design</a></li>
+              <li><a href="website-design.html">Website Design</a></li>
+              <li><a href="web-application-design.html">Web App Design</a></li>
+              <li><a href="saas-design.html">SaaS Design</a></li>
+              <li><a href="branding-design.html">Branding</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-pixxen">
+            <div class="nav-col-title">Pixxen</div>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="case-study.html">Case Studies</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-resources">
+            <div class="nav-col-title">Resources</div>
+            <ul>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-legal">
+            <div class="nav-col-title">Legal</div>
+            <ul>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- /menu-top -->
+
+      <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+      <div class="menu-bottom" id="menu-bottom">
+        <!-- LOGO -->
+        <div class="bottom-logo" id="bottom-logo">
+          <img
+            src="assets/images/cleaning-footer-logo.svg"
+            class="img-fluid"
+            alt="largemenu"
+          />
+        </div>
+      </div>
+      <!-- /menu-bottom -->
+    </div>
+    <!-- / FULL PAGE MENU -->
+
+    <!-- Banner section -->
+    <section
+      class="cleaning-services-banner bg-[#082E3E] mt-12 overflow-hidden"
+    >
+      <div class="max-w-475 mx-auto min-h-[90vh]">
+        <!-- 50 / 50 row -->
+        <div class="flex flex-col lg:flex-row lg:items-stretch min-h-[90vh]">
+          <!-- ===== LEFT (50%) ===== -->
+          <div
+            class="w-full lg:w-1/2 flex flex-col justify-center px-6 py-12 lg:py-20 lg:pl-[77px] lg:pr-10"
+          >
+            <!-- Title -->
+            <h1
+              class="cleaning-heading-reveal font-stack-head text-white text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[68px] 2xl:text-[80px] font-bold leading-[100%]"
+            >
+              <span class="text-[#89D7EF]">Cleaning</span> company website
+              design.
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="font-stack-head text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-[32px] font-bold leading-[120%] mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8"
+            >
+              That turns
+              <span class="text-[#89D7EF]">'house cleaning near me'</span>
+              searches into booked recurring jobs
+            </p>
+
+            <!-- Buttons -->
+            <div
+              class="mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8 flex flex-col sm:flex-row sm:gap-4 gap-2 flex-wrap"
+            >
+              <!-- Primary -->
+              <a
+                href="#"
+                class="mega-reveal-btn cleaning-primary-btn flex justify-center w-full sm:w-auto items-center relative overflow-hidden cursor-pointer px-8 py-3.5 sm:py-4 md:py-4.5 lg:py-5 rounded-full ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] transition-all duration-200"
+              >
+                <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+                  <span
+                    class="t-up font-stack-head text-white font-bold leading-[120%] text-sm sm:text-base lg:text-lg"
+                    >Book a free 15-min call</span
+                  >
+                  <span
+                    class="t-down font-stack-head text-white font-bold leading-[120%] text-sm sm:text-base lg:text-lg"
+                    >Book a free 15-min call</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <!-- Checklist -->
+            <ul
+              class="mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-8 flex flex-col gap-2"
+            >
+              <li
+                class="flex items-center gap-3 text-[#89D7EF] text-sm lg:text-base font-normal leading-[150%]"
+              >
+                <img
+                  src="assets/images/clening-checks.svg"
+                  class="img-fluid"
+                  alt="check"
+                />
+                Trusted by independent pet care businesses
+              </li>
+              <li
+                class="flex items-center gap-3 text-[#89D7EF] text-sm lg:text-base font-normal leading-[150%]"
+              >
+                <img
+                  src="assets/images/clening-checks.svg"
+                  class="img-fluid"
+                  alt="check"
+                />
+                 14-day delivery
+              </li>
+              <li
+                class="flex items-center gap-3 text-[#89D7EF] text-sm lg:text-base font-normal leading-[150%]"
+              >
+                <img
+                  src="assets/images/clening-checks.svg"
+                  class="img-fluid"
+                  alt="check"
+                />
+                 You own the site, content, and domain
+              </li>
+              <li
+                class="flex items-center gap-3 text-[#89D7EF] text-sm lg:text-base font-normal leading-[150%]"
+              >
+                <img
+                  src="assets/images/clening-checks.svg"
+                  class="img-fluid"
+                  alt="check"
+                />
+                No retainers
+              </li>
+            </ul>
+
+            <!-- Price block -->
+            <div
+              class="mt-4 sm:mt-10 md:mt-20 xl:mt-32 pt-4 sm:pt-6 md:pt-8 border-t border-white/12 flex flex-col gap-3.5 w-fit"
+            >
+              <span
+                class="font-stack-head text-white text-xs sm:text-sm md:text-base font-bold leading-[120%]"
+                >Everything Included</span
+              >
+              <span
+                class="font-stack-head text-[#89D7EF] font-bold leading-[120%] text-[36px] sm:text-[40px] md:text-[44px] lg:text-[50px] xl:text-[56px]"
+                >USD 999 /<span
+                  class="font-stack-head text-white font-bold leading-[120%] text-[24px] sm:text-[26px] md:text-[28px] lg:text-[32px]"
+                >
+                  one-time</span
+                ></span
+              >
+            </div>
+          </div>
+
+          <!-- ===== RIGHT (50%) ===== -->
+          <div
+            class="relative w-full lg:w-1/2 flex items-end justify-end m-0 p-0"
+          >
+            <div
+              class="scene relative w-full h-full flex items-end justify-end"
+            >
+              <img
+                class="hero-img block w-full h-auto object-cover object-bottom select-none pointer-events-none m-0 p-0"
+                src="assets/images/cleaning-banner-person.webp"
+                alt="Cleaning company website design"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The real problems section -->
+    <section
+      class="bg-[linear-gradient(180deg,#FFF_0%,#E2F8FF_50%,#9ADDF2_100%)] section-padding"
+    >
+      <div class="container">
+        <div class="flex flex-col items-center">
+          <!-- section heading -->
+          <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+            <div
+              class="inline-flex items-center justify-center px-3 sm:px-4 py-2 rounded-full bg-[linear-gradient(270deg,#FF836C_-0.27%,#9F321E_99.73%)] text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold leading-[120%] mb-3 sm:mb-4"
+            >
+              The real problems
+            </div>
+
+            <h2
+              class="cleaning-heading-reveal text-[#003A4C] text-center font-stack-head text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-[120%] mb-3 sm:mb-4"
+            >
+              Nine reasons most cleaning company websites lose to the local
+              3-pack
+            </h2>
+
+            <p
+              class="text-[#4B666E] text-center text-[12px] sm:text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+            >
+              Cleaning is sold on trust (you are in their home) and reliability
+              (you show up consistently). Most cleaning sites we audit are
+              leaking qualified bookings in ways the owner hasn't noticed yet.
+            </p>
+          </div>
+
+          <!-- Cards grid -->
+          <div
+            class="cleaning-problems grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
+          >
+            <!-- Item 1 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-01.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  No instant quote homeowners have to call or fill a form
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Cleaning is a low-consideration purchase. Homeowners want a
+                  price in 30 seconds. Sites with instant-quote tools convert
+                  3–4x better than call-for-quote competitors.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-02.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Recurring plan pricing hidden behind Contact us
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Weekly, biweekly, and monthly are the highest-LTV services in
+                  cleaning. Hiding pricing kills the comparison-shopper who
+                  wants to budget upfront.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-03.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  No bonded-and-insured trust signals in the header
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Homeowners letting strangers into their homes look for
+                  bonded-and-insured language first. Buried in a footer or
+                  missing means prospects assume you are not.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-04.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  No cleaner profiles or team visibility
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Background-checked, English-speaking, trained on green
+                  products—these are silent objections. Cleaner profile photos
+                  with first names and certifications shortcut the trust gap.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-05.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Generic Services page where service-specific pages should live
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Move-out cleaning, post-construction, deep cleaning, Airbnb
+                  turnover—each is a separate search intent with different
+                  urgency. One services page collapses all of it.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-06.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Online booking flow takes 8 taps on mobile
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Average cleaning prospect arrives on mobile, scrolls one page,
+                  decides in under 30 seconds. Booking flows with more than 2
+                  taps lose half the prospects.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-07.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  No service-area clarity – wasting dispatch on out-of-zone
+                  leads
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Specific ZIP codes and a service-area map filter out-of-zone
+                  leads and prevent the dispatch-co-cancel waste that kills
+                  margin.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-08.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  No eco-friendly or green product positioning
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  25-35% of cleaning prospects consist of young children, pet
+                  owners, chemical-sensitive adults filter on green products.
+                  Sites without EPA Safer Choice language lose this segment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div
+              class="cleaning-problem-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-problems-09.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Reviews live on Google but not on the site
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  You have 4.9 stars and 250 Google reviews – but your homepage
+                  shows zero. Prospects will not open a new tab to verify; they
+                  decide based on what is in front of them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section top wave shape -->
+    <div class="w-full overflow-hidden leading-none block -mt-1">
+      <img
+        src="assets/images/cleaning-top-wave.svg"
+        class="w-full object-contain block m-0 p-0"
+        alt="Wave divider"
+      />
+    </div>
+
+    <!-- price plan section -->
+    <section class="bg-white section-padding">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <div
+            class="inline-flex items-center justify-center px-3 sm:px-4 py-2 rounded-full bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold leading-[120%] mb-3 sm:mb-4"
+          >
+            Everything included
+          </div>
+
+          <h2
+            class="cleaning-heading-reveal text-[#003A4C] text-center font-stack-head text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-[120%] mb-3 sm:mb-4"
+          >
+            Separate Costs vs Our Package
+          </h2>
+
+          <p
+            class="text-[#4B666E] text-center text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+          >
+            Six separate services from six providers, or one package, one team,
+            one fixed price. Every deliverable built specifically for how
+            cleaning companies clients research and buy.
+          </p>
+        </div>
+
+        <div class="max-w-248 mx-auto flex flex-col">
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-01.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  Logo + brand identity
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Logo, palette, typography, brand kit. Clean and trustworthy
+                  aesthetic — modern, not template-from-2010.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 400+</span
+              >
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-02.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  Custom 7-page cleaning website
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Home, Residential, Commercial, Specialty services, About +
+                  team, Reviews, Contact. Mobile-first, sub-2s load.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 1,500+</span
+              >
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-03.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  SEO content with real keyword research
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Page copy targeting 'house cleaning [city],' 'move-out
+                  cleaning [neighborhood],' 'office cleaning company.'
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 800+</span
+              >
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-04.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  Technical on-page SEO setup
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  CleaningService and LocalBusiness schema, meta titles per
+                  service, internal linking, sitemap, Search Console.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 500+</span
+              >
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-05.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  Google Business Profile optimization
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Categories, services, photos, NAP cleanup. The #1 source for
+                  'house cleaning near me' searches.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 400+</span
+              >
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div
+            class="flex items-start justify-between px-3 py-4 sm:px-6 sm:py-6 border-t border-[#CAD6D9] gap-3 sm:gap-6"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-icon-06.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%] mb-2.5 sm:mb-3.5"
+                >
+                  30 days post-launch support
+                </h3>
+                <p
+                  class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Bug fixes, content updates, CMS training, A/B test of primary
+                  lead capture.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >USD 300+</span
+              >
+            </div>
+          </div>
+
+          <!-- Total elsewhere -->
+          <div
+            class="flex items-center justify-between px-3 py-4 sm:px-6 sm:py-6 rounded-3xl lg:rounded-4xl bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] gap-3 sm:gap-6"
+          >
+            <div class="flex items-center gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-transparent"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-plus.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >
+                  Total elsewhere
+                </h3>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-[#003A4C] font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+              >
+                USD 3,900+
+              </span>
+            </div>
+          </div>
+
+          <!-- Pixxen Cleaning Pack -->
+          <div
+            class="flex items-center justify-between px-3 py-4 sm:px-6 sm:py-6 rounded-3xl lg:rounded-4xl bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] gap-3 sm:gap-6"
+          >
+            <div class="flex items-center gap-4 sm:gap-6">
+              <div
+                class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full shrink-0 flex justify-center items-center bg-transparent"
+              >
+                <img
+                  src="assets/images/cleaning-price-plan-pixxen.svg"
+                  class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="text-white font-stack-head text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-[120%]"
+                >
+                  Pixxen Cleaning Pack
+                </h3>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="text-white font-stack-head text-xl sm:text-2xl md:text-[32px] lg:text-[40px] xl:text-[48px] font-bold leading-[120%]"
+              >
+                USD 999
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section bottom wave shape -->
+    <div class="w-full overflow-hidden leading-none block -mt-1">
+      <img
+        src="assets/images/cleaning-bottom-wave.svg"
+        class="w-full object-contain block m-0 p-0"
+        alt="Wave divider"
+      />
+    </div>
+
+    <!-- Nine features cleaning section -->
+    <section
+      class="bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_50%,#E2F8FF_100%)] section-padding"
+    >
+      <div class="container">
+        <div class="flex flex-col items-center">
+          <!-- section heading -->
+          <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+            <div
+              class="inline-flex items-center justify-center px-3 sm:px-4 py-2 rounded-full bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold leading-[120%] mb-3 sm:mb-4"
+            >
+              Built for cleaning companies
+            </div>
+
+            <h2
+              class="cleaning-heading-reveal text-[#003A4C] text-center font-stack-head text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-[120%] mb-3 sm:mb-4"
+            >
+              Nine reasons most cleaning company websites lose to the local
+              3-pack
+            </h2>
+
+            <p
+              class="text-[#4B666E] text-center text-[12px] sm:text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+            >
+              Cleaning is sold on trust (you are in their home) and reliability
+              (you show up consistently). Most cleaning sites we audit are
+              leaking qualified bookings in ways the owner hasn't noticed yet.
+            </p>
+          </div>
+
+          <!-- Cards grid -->
+          <div
+            class="cleaning-features grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
+          >
+            <!-- Item 1 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-01.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Instant quote calculator
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Square footage + bedroom count + bathroom count + service type
+                  + frequency -> instant price. Routes into Jobber, Housecall
+                  Pro, or ZenMaid with proper field mapping.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-02.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Recurring plan comparison
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Weekly, biweekly, monthly side-by-side with transparent
+                  pricing and what is included. Filters one-time shoppers,
+                  qualifies recurring prospects who become 18-36 month LTV.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-03.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Bonded-and-insured badges in the header
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Bonding amount, liability insurance carrier, workers comp
+                  status. Trust signals visible where prospects actually look.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-04.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Team profile page with cleaner photos
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  First names, years with company, training certifications
+                  (IICRC, ARCSI), background-check disclosure. Anxious customers
+                  see real people, not stock photos.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-05.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Eco-friendly product messaging
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  EPA Safer Choice certification, plant-based product lines,
+                  pet-safe and child-safe formulations. Wins the 25-35%
+                  filtering on green products.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-06.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Service-specific landing pages
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Move-out, post-construction, Airbnb turnover, deep cleaning,
+                  recurring residential – each its own page with appropriate
+                  urgency and pricing structure.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-07.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  3-tap mobile booking
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Service type -> date/time -> contact info. Three screens,
+                  three taps, into your scheduling platform.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-08.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Live review aggregation from Google and Yelp
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Real reviews pulled live, embedded on homepage and service
+                  pages. Schema-marked for rich snippets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div
+              class="cleaning-feature-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+            >
+              <div
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+              >
+                <img
+                  src="assets/images/cleaning-featured-09.svg"
+                  class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                  alt="Feature Icon"
+                />
+              </div>
+              <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
+                <h3
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
+                >
+                  Service area map with ZIP coverage
+                </h3>
+                <p
+                  class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                >
+                  Specific ZIPs visible with a map. Filters out-of-zone leads at
+                  the form stage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section top wave shape -->
+    <div class="w-full overflow-hidden leading-none block -mt-1">
+      <img
+        src="assets/images/cleaning-top-wave-2.svg"
+        class="w-full object-contain block m-0 p-0"
+        alt="Wave divider"
+      />
+    </div>
+
+    <!-- Cleaning Websites Built Around Your Business Needs -->
+    <section class="bg-white section-padding">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+          <!-- Left Sticky/Fixed Content -->
+          <div class="lg:col-span-4 lg:sticky lg:top-20">
+            <div
+              class="inline-flex items-center justify-center px-3 sm:px-4 py-2 rounded-full bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold leading-[120%] mb-3 sm:mb-4"
+            >
+              8 specializations, one playbook
+            </div>
+
+            <h2
+              class="cleaning-heading-reveal text-[#003A4C] font-stack-head text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-[120%] mb-4 sm:mb-6"
+            >
+              Cleaning Websites Built Around Your Business Needs
+            </h2>
+
+            <p
+              class="text-[#4B666E] text-xs sm:text-sm lg:text-base font-normal leading-[150%]"
+            >
+              A residential weekly-cleaning service and a commercial
+              office-cleaning contractor sell entirely different services to
+              entirely different buyers. We design for the niche.
+            </p>
+          </div>
+
+          <!-- Right Cards Grid -->
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] flex flex-col border border-[#89D7EF] overflow-hidden"
+            >
+              <!-- Image Wrapper (Rounded Top Only) -->
+              <div
+                class="m-2 sm:m-3 mb-0 aspect-[16/10] overflow-hidden rounded-t-3xl sm:rounded-t-4xl md:rounded-t-[36px] lg:rounded-t-[40px] xl:rounded-t-[48px] rounded-b-none"
+              >
+                <img
+                  src="assets/images/cleaning-specialization-thumbnail-01.png"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  alt="Residential house cleaning"
+                />
+              </div>
+
+              <!-- Content Section -->
+              <div class="p-3 sm:p-6 flex gap-4 items-start">
+                <!-- Left Icon -->
+                <div
+                  class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                >
+                  <img
+                    src="assets/images/cleaning-specialization-icon-01.svg"
+                    class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-12 xl:h-12 object-contain"
+                    alt="Icon"
+                  />
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="flex-1">
+                  <h3
+                    class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[28px] lg:text-[32px] font-bold leading-[120%] mb-2"
+                  >
+                    Residential house cleaning website
+                  </h3>
+
+                  <!-- Animated Border Line -->
+                  <div
+                    class="w-12 h-0.5 bg-[#57C6E9] mb-4 transition-all duration-300 ease-in-out group-hover:w-full"
+                  ></div>
+
+                  <p
+                    class="text-[#4B666E] text-[12px] sm:text-sm lg:text-base font-normal leading-[150%]"
+                  >
+                    Recurring plan comparison (weekly, biweekly, monthly),
+                    instant quote calculator, bonded-and-insured badges, team
+                    profile page, eco-friendly product positioning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta section start -->
+    <section
+      class="cta-sections overflow-hidden section-padding bg-[#003A4C] text-center relative"
+    >
+      <img
+        src="assets/images/shape-top.png"
+        class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt=""
+      />
+      <img
+        src="assets/images/shape-right.png"
+        class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt=""
+      />
+
+      <div class="container">
+        <div class="cta-wrap z-80 relative">
+          <div class="max-w-227.5 mx-auto">
+            <div class="text-center max-w-227.5 mx-auto sm:mb-12 mb-6">
+              <h2
+                class="cleaning-heading-reveal font-stack-head text-white text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] font-bold leading-[120%] mb-4 md:mb-6"
+              >
+                Ready for a website that turns 'house cleaning near me' searches
+                into booked recurring jobs?
+              </h2>
+              <p
+                class="text-white text-[12px] sm:text-[13px] md:text-[14px] lg:text-base font-normal leading-[150%]"
+              >
+                Book a free 15-minute call. We'll review your current site,
+                audit your top three competitors who outrank you, name the three
+                biggest leaks costing you bookings right now, and tell you
+                honestly whether the Pixxen Cleaning Pack fits — or whether you
+                need something bigger.
+              </p>
+
+              <div class="flex justify-center mt-4 md:mt-6">
+                <!-- primary button -->
+                <a
+                  href="#"
+                  class="mega-reveal-btn cleaning-primary-btn flex justify-center w-full sm:w-auto items-center relative overflow-hidden cursor-pointer px-8 py-3.5 sm:py-4 md:py-4.5 lg:py-5 rounded-full ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[linear-gradient(90deg,#1F94B9_0%,#57C6E9_100%)] transition-all duration-200"
+                >
+                  <div
+                    class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col"
+                  >
+                    <span
+                      class="t-up font-stack-head text-white font-bold leading-[120%] text-sm sm:text-base lg:text-lg"
+                      >Book a free 15-min call</span
+                    >
+                    <span
+                      class="t-down font-stack-head text-white font-bold leading-[120%] text-sm sm:text-base lg:text-lg"
+                      >Book a free 15-min call</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cta section end -->
+
+    <!-- footer section start -->
+    <footer class="relative">
+      <div
+        class="bg-linear-to-b bg-[#003A4C] text-white border-t border-b border-white/12"
+      >
+        <div class="container">
+          <!-- Desktop Grid Layout -->
+          <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+            <div
+              class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-white/12"
+            >
+              <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                <!-- Services Column -->
+                <div class="">
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Services
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="mobile-app-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >MOBILE APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="dashboard-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >DASHBOARD DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="website-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEBSITE DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="web-application-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEB APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="saas-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >SAAS DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="branding-design.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BRANDING</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Pixxen Column -->
+                <div class="">
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Pixxen
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >ABOUT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CONTACT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="career.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CAREER</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="team.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TEAM</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="">
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Resources
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="case-study.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CASE STUDIES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="blog.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BLOGS</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="">
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Legal
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="terms.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TERMS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy.html"
+                        class="text-white hover:text-[#1F94B9] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >PRIVACY</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Copyright -->
+              <div
+                class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#56614C] lg:border-0 md:block hidden"
+              >
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div
+              class="md:pl-10 lg:pl-14 md:border-l border-[#29456E] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5"
+            >
+              <div>
+                <p
+                  class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4"
+                >
+                  Join 5,000+ design lovers.
+                </p>
+                <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                  Monthly design insights, case studies, and inspiration
+                  straight to your inbox.
+                </p>
+
+                <!-- Email Input -->
+                <div class="relative mb-3 md:mb-8 lg:mb-12">
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    class="w-full bg-transparent border border-[#29456E] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#ffffff] focus:outline-none focus:border-[#1F94B9] transition-colors text-[12px] sm:text-sm lg:text-base pr-14"
+                  />
+                  <button
+                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#29456E] hover:bg-[#1F94B9] p-5 rounded-r-2xl transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Icons -->
+              <div
+                class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2"
+              >
+                <a
+                  href="#"
+                  class="bg-[#29456E] hover:bg-[#1F94B9] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#29456E] hover:bg-[#1F94B9] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#29456E] hover:bg-[#1F94B9] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#29456E] hover:bg-[#1F94B9] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Copyright -->
+              <div class="mt-1 flex justify-center md:hidden">
+                <p class="text-[#759187] text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[linear-gradient(180deg,_#003A4C_0%,_#89D7EF_100%)] sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end"
+      >
+        <div class="flex justify-center text-center">
+          <img
+            src="assets/images/cleaning-footer-logo.svg"
+            class="img-fluid w-full object-contain"
+            alt="footerlogo"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
