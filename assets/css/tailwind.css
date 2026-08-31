@@ -837,4 +837,56 @@ html.lenis body {
 
 
 
-/* banner section start */
+/* Cleaning testimonial slider css */
+ @media (min-width: 1024px) {
+    #cleaning-testimonial-slider .splide__pagination {
+      display: none !important;
+    }
+  }
+
+  /* Style pagination container below the slider */
+  #cleaning-testimonial-slider .splide__pagination {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    z-index: 10;
+  }
+
+  /* Styled Arrow/Circle Pagination Indicator */
+  #cleaning-testimonial-slider .splide__pagination__page {
+    width: 10px;
+    height: 10px;
+    background: #9ADDF2;
+    border-radius: 50%;
+    opacity: 0.5;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  
+  #cleaning-testimonial-slider .splide__pagination__page.is-active {
+    background: #1F94B9;
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+  /*  */
+.cleaning-faq-content {
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
+
+.cleaning-faq-content p {
+    margin: 0;
+}
+
+.cleaning-icon-close img {
+    transition: transform 0.3s ease;
+}
+
