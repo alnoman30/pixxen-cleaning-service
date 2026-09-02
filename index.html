@@ -21,7 +21,7 @@
             <button
               id="desktop-sidebar"
               aria-label="Toggle menu"
-              class="hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#89D7EF] hover:bg-[#04607c] cursor-pointer transition-colors"
+              class="hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#003A4C] hover:bg-[#04607c] border-r border-r-[#E0E8EA1F] cursor-pointer transition-colors"
               aria-label="Toggle menu"
             >
               <svg
@@ -63,12 +63,12 @@
           </div>
 
           <!-- Desktop Menu -->
-          <div class="hidden lg:flex items-center space-x-8">
+          <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
             <!-- ====== SERVICES DROPDOWN ====== -->
             <div class="desktop-dropdown">
               <a
                 href="#services"
-                class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium desktop-dropdown-toggle"
+                class="text-white hover:text-[#ADEBB3] transition-colors text-sm xl:text-base font-medium desktop-dropdown-toggle"
               >
                 SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
               </a>
@@ -168,22 +168,22 @@
 
             <a
               href="case-study.html"
-              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-sm xl:text-base font-medium"
               >CASE STUDIES</a
             >
             <a
               href="about.html"
-              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-sm xl:text-base font-medium"
               >ABOUT</a
             >
             <a
               href="blog.html"
-              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-sm xl:text-base font-medium"
               >BLOG</a
             >
             <a
               href="contact.html"
-              class="text-white hover:text-[#ADEBB3] transition-colors text-base font-medium"
+              class="text-white hover:text-[#ADEBB3] transition-colors text-sm xl:text-base font-medium"
               >Contact</a
             >
           </div>
@@ -195,11 +195,13 @@
               class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-white/12 transition-all font-medium"
             >
               <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
-                <span class="t-up text-base font-medium text-white uppercase"
-                  >OUR Contact</span
+                <span
+                  class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                  >Contact</span
                 >
-                <span class="t-down text-base font-medium text-white uppercase"
-                  >OUR Contact</span
+                <span
+                  class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                  >Contact</span
                 >
               </div>
             </a>
@@ -209,11 +211,11 @@
             >
               <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
                 <span
-                  class="t-up text-base font-medium text-[#003A4C] uppercase"
+                  class="t-up text-sm xl:text-base font-medium text-[#003A4C] uppercase"
                   >Let’s Connect</span
                 >
                 <span
-                  class="t-down text-base font-medium text-[#003A4C] uppercase"
+                  class="t-down text-sm xl:text-base font-medium text-[#003A4C] uppercase"
                   >Let’s Connect</span
                 >
               </div>
@@ -765,14 +767,14 @@
 
           <!-- Cards grid -->
           <div
-            class="cleaning-animate-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
           >
             <!-- Item 1 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-01.svg"
@@ -782,7 +784,7 @@
               </div>
               <div class="flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-6">
                 <h3
-                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%] "
+                  class="text-[#003A4C] font-stack-head text-xl sm:text-2xl md:text-[26px] lg:text-[28px] xl:text-[32px] font-bold leading-[120%]"
                 >
                   No instant quote homeowners have to call or fill a form
                 </h3>
@@ -798,10 +800,10 @@
 
             <!-- Item 2 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-02.svg"
@@ -827,10 +829,10 @@
 
             <!-- Item 3 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-03.svg"
@@ -856,10 +858,10 @@
 
             <!-- Item 4 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-04.svg"
@@ -885,10 +887,10 @@
 
             <!-- Item 5 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-05.svg"
@@ -914,10 +916,10 @@
 
             <!-- Item 6 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-06.svg"
@@ -943,10 +945,10 @@
 
             <!-- Item 7 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-07.svg"
@@ -973,10 +975,10 @@
 
             <!-- Item 8 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-08.svg"
@@ -1002,10 +1004,10 @@
 
             <!-- Item 9 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#FFF6F4_0%,#FFBDB1_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-problems-09.svg"
@@ -1407,14 +1409,14 @@
 
           <!-- Cards grid -->
           <div
-            class="cleaning-animate-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
           >
             <!-- Item 1 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-01.svg"
@@ -1440,10 +1442,10 @@
 
             <!-- Item 2 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-02.svg"
@@ -1469,10 +1471,10 @@
 
             <!-- Item 3 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-03.svg"
@@ -1497,10 +1499,10 @@
 
             <!-- Item 4 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-04.svg"
@@ -1526,10 +1528,10 @@
 
             <!-- Item 5 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-05.svg"
@@ -1555,10 +1557,10 @@
 
             <!-- Item 6 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-06.svg"
@@ -1584,10 +1586,10 @@
 
             <!-- Item 7 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-07.svg"
@@ -1612,10 +1614,10 @@
 
             <!-- Item 8 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-08.svg"
@@ -1640,10 +1642,10 @@
 
             <!-- Item 9 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-featured-09.svg"
@@ -3169,98 +3171,126 @@
 
           <!-- Fluid Wrap Badges Grid -->
           <div class="max-w-248 flex flex-wrap justify-center gap-1">
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >BuilderTrend</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300 hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300 hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
-                class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg "
+                class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >CoConstruct</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >JobTread</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Procore</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Houzz Pro</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >CompanyCam</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >GreenSky</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Hearth</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Service Finance</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Synchrony Home</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Angi</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >BBB</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >Google Business Profile</span
               >
             </div>
 
-            <div class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300">
+            <div
+              class="bg-[#D2F4FF] rounded-full px-4 py-1.5 sm:py-2 w-fit hover:bg-[#ADEBB3] transition-all duration-300"
+            >
               <span
                 class="font-stack-head text-[#067598] font-bold text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg"
                 >NKBA</span
@@ -3974,14 +4004,14 @@
 
           <!-- Cards grid -->
           <div
-            class="cleaning-animate-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 xl:gap-8 w-full"
           >
             <!-- Item 1 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-wywp-01.svg"
@@ -4007,10 +4037,10 @@
 
             <!-- Item 2 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-wywp-02.svg"
@@ -4037,10 +4067,10 @@
 
             <!-- Item 3 -->
             <div
-              class="cleaning-animate-card bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)]"
+              class="group bg-white rounded-3xl sm:rounded-4xl md:rounded-[36px] lg:rounded-[40px] xl:rounded-[48px] p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 xl:gap-8 shadow-[32px_32px_64px_0_rgba(0,58,76,0.06)] transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-[0_32px_64px_0_rgba(0,27,85,0.16)]"
             >
               <div
-                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)]"
+                class="w-14 h-14 sm:w-16 sm:h-16 md:w-18 md:h-18 lg:w-20 lg:h-20 xl:w-24 xl:h-24 rounded-full flex justify-center items-center bg-[linear-gradient(180deg,#E2F8FF_0%,#9ADDF2_100%)] transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
               >
                 <img
                   src="assets/images/cleaning-wywp-03.svg"
